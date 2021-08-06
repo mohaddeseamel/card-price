@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(233, 233, 250);
+}
+body main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+@media screen and (max-width:557px) and (min-width:320px){
+    body main{
+        display: flex;
+        flex-direction: column;
+    }
+}
+body main .card-left{
+    width: 20%;
+    height: 450px;
+    background-color:rgb(16, 16, 61);
+    margin-right: 5px;
+    border-radius: 18px;
+}
+@media screen and (max-width:992px) and (min-width:557px){
+    body main .card-left{
+        width: 40%;
+    }
+}
+@media screen and (max-width:557px) and (min-width:320px){
+    body main .card-left{
+        width: 70%;
+        height: 380px;
+        margin-top: 50px;
+    }
+}
+
+body main .card-left .title h3{
+    color: white;
+    font-size: 18px;
+    padding: 40px 20px 10px 80px;
+
+}
+body main .card-left .title p{
+    color: rgb(148, 148, 148);
+    font-size: 15px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    padding: 0 20px 10px 80px;
+}
+body main .card-left .price h2{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 40px;
+    padding: 0 20px 10px 80px;
+}
+body main .card-left .info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+body main .card-left .options .field{
+    display: flex;
+    margin-bottom: 10px;
+}
+body main .card-left .options .field .circle{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+}
+body main .card-left .options .field .circle::after{
+    content: "";
+    width: 9px;
+    height: 2px;
+    border: 2px solid rgb(16, 16, 61);
+    position: absolute;
+    border-top-color: rgb(0, 0, 0,0);
+    border-right-color: rgba(0, 0, 0, 0);
+    transform: rotate(-45deg);
+    left: 1px;
+    top: 3px;
+}
+body main .card-left .options .field p{
+    color: rgb(202, 202, 202);
+    margin-left: 8px;
+    font-size: 13px;
+}
+body main .card-left .btn{
+    width: 80%;
+    padding: 8px;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    color: rgb(16, 16, 61);
+    cursor: pointer;
+    margin-top: 25px;
+    font-weight: bold;
+}
+@media screen and (max-width:557px) and (min-width:320px){
+    body main .card-left .btn{
+        margin-top:0;
+    }
+}
+body main .card-right{
+    width: 20%;
+    height: 450px;
+    background-color:rgb(16, 16, 61);
+    border-radius: 18px;  
+}
+@media screen and (max-width:992px) and (min-width:557px){
+    body main .card-right{
+        width: 40%;
+    }
+}
+@media screen and (max-width:557px) and (min-width:320px){
+    body main .card-right{
+        width: 70%;
+        margin-top: 5px;
+        height: 380px;
+    }
+}
+body main .card-right .title h3{
+    color: white;
+    font-size: 18px;
+    padding: 40px 20px 10px 80px;
+}
+body main .card-right .title p{
+    color: rgb(148, 148, 148);
+    font-size: 15px;
+    font-weight: 100;
+    margin-bottom: 30px;
+    padding: 0 20px 10px 80px;
+}
+body main .card-right .price h2{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 40px;
+    padding: 0 20px 10px 80px;
+}
+body main .card-right .info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+body main .card-right .options{
+    padding-bottom: 40px;
+}
+body main .card-right .options .field{
+    display: flex;
+    margin-bottom: 10px;
+}
+body main .card-right .options .field .circle{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+}
+body main .card-right .options .field .circle::after{
+    content: "";
+    width: 9px;
+    height: 2px;
+    border: 2px solid rgb(16, 16, 61);
+    position: absolute;
+    border-top-color: rgb(0, 0, 0,0);
+    border-right-color: rgba(0, 0, 0, 0);
+    transform: rotate(-45deg);
+    left: 1px;
+    top: 3px;
+}
+body main .card-right .options .field p{
+    color: rgb(202, 202, 202);
+    margin-left: 8px;
+    font-size: 13px;
+}
+body main .card-right .btn{
+    width: 80%;
+    padding: 8px;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    color: rgb(16, 16, 61);
+    cursor: pointer;
+    margin-top: 25px;
+    font-weight: bold;
+}
+@media screen and (max-width:557px) and (min-width:320px){
+    body main .card-right .btn{
+        margin-top: 0;
+    }
+}
